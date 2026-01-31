@@ -1,12 +1,12 @@
 <p align="center">
-  <img src="clawdia.png" alt="Clawdia" width="200">
+  <img src="moltron.png" alt="Moltron" width="200">
 </p>
 
-# Clawdia
+# Moltron
 
 AI trading agent for Solana memecoins on Axiom. Uses OpenClaw browser automation to execute trades through axiom.trade.
 
-[![ClawHub](https://img.shields.io/badge/ClawHub-clawdia-red)](https://www.clawhub.ai/kaelxsol/clawdia)
+[![ClawHub](https://img.shields.io/badge/ClawHub-moltron-red)](https://www.clawhub.ai/kaelxsol/moltron)
 
 ## What It Does
 
@@ -51,10 +51,10 @@ openclaw config set agents.defaults.model.primary "google/gemini-2.0-flash"
 
 ```bash
 # From ClawdHub
-npx clawdhub install clawdia
+npx clawdhub install moltron
 
 # Or manually copy SKILL.md to:
-# ~/.openclaw/skills/clawdia/SKILL.md
+# ~/.openclaw/skills/moltron/SKILL.md
 ```
 
 ### 5. Start Gateway
@@ -73,10 +73,10 @@ GEMINI_API_KEY="your-key" openclaw gateway run
 
 ```bash
 openclaw cron add \
-  --name "clawdia-trader" \
+  --name "moltron-trader" \
   --every 45s \
   --session isolated \
-  --message "You are the clawdia trading bot. Use browser snapshot and browser act commands to trade on Axiom. 1) browser snapshot --profile chrome to see the page. 2) Navigate to https://axiom.trade/trackers?chain=sol 3) Look for starred wallets buying. 4) If good setup found, navigate to token page and buy 0.1 SOL. Follow the clawdia skill instructions for browser commands. Report: [BOUGHT token] or [SCANNED - no action]"
+  --message "You are the moltron trading bot. Use browser snapshot and browser act commands to trade on Axiom. 1) browser snapshot --profile chrome to see the page. 2) Navigate to https://axiom.trade/trackers?chain=sol 3) Look for starred wallets buying. 4) If good setup found, navigate to token page and buy 0.1 SOL. Follow the moltron skill instructions for browser commands. Report: [BOUGHT token] or [SCANNED - no action]"
 ```
 
 ## Configuration
@@ -129,7 +129,7 @@ Attach a tab: Click OpenClaw extension icon on your Axiom tab.
 ### Bot scans but doesn't trade
 Check the skill is loaded:
 ```bash
-openclaw skills list | grep clawdia
+openclaw skills list | grep moltron
 ```
 
 ## Links
